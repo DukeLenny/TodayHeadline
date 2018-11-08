@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F7469C6B2193E58F00685156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469C6A2193E58F00685156 /* AppDelegate.swift */; };
-		F7469C702193E58F00685156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7469C6E2193E58F00685156 /* Main.storyboard */; };
 		F7469C722193E59100685156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7469C712193E59100685156 /* Assets.xcassets */; };
 		F7469C802193E59100685156 /* TodayHeadlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469C7F2193E59100685156 /* TodayHeadlineTests.swift */; };
 		F7469C8B2193E59100685156 /* TodayHeadlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469C8A2193E59100685156 /* TodayHeadlineUITests.swift */; };
+		F7469CBC219418FB00685156 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CAB219418FB00685156 /* Bundle+Extension.swift */; };
+		F7469CBD219418FB00685156 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CAC219418FB00685156 /* Date+Extension.swift */; };
+		F7469CBE219418FB00685156 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CAD219418FB00685156 /* UIBarButtonItem+Extension.swift */; };
+		F7469CBF219418FB00685156 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CAE219418FB00685156 /* UIButton+Extension.swift */; };
+		F7469CC0219418FB00685156 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CAF219418FB00685156 /* UIColor+Extension.swift */; };
+		F7469CC1219418FB00685156 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB0219418FB00685156 /* UIDevice+Extension.swift */; };
+		F7469CC2219418FB00685156 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB1219418FB00685156 /* UILabel+Extension.swift */; };
+		F7469CC3219418FB00685156 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB3219418FB00685156 /* Network.swift */; };
+		F7469CC4219418FB00685156 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB5219418FB00685156 /* Constant.swift */; };
+		F7469CC5219418FB00685156 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB6219418FB00685156 /* Function.swift */; };
+		F7469CC6219418FB00685156 /* URLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CB7219418FB00685156 /* URLString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +44,6 @@
 /* Begin PBXFileReference section */
 		F7469C672193E58F00685156 /* TodayHeadline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayHeadline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7469C6A2193E58F00685156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7469C6F2193E58F00685156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7469C712193E59100685156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7469C762193E59100685156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7469C7B2193E59100685156 /* TodayHeadlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayHeadlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +52,17 @@
 		F7469C862193E59100685156 /* TodayHeadlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayHeadlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7469C8A2193E59100685156 /* TodayHeadlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeadlineUITests.swift; sourceTree = "<group>"; };
 		F7469C8C2193E59100685156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7469CAB219418FB00685156 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F7469CAC219418FB00685156 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F7469CAD219418FB00685156 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		F7469CAE219418FB00685156 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		F7469CAF219418FB00685156 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F7469CB0219418FB00685156 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		F7469CB1219418FB00685156 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		F7469CB3219418FB00685156 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F7469CB5219418FB00685156 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F7469CB6219418FB00685156 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		F7469CB7219418FB00685156 /* URLString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +113,8 @@
 		F7469C692193E58F00685156 /* TodayHeadline */ = {
 			isa = PBXGroup;
 			children = (
+				F7469C98219418FA00685156 /* Class */,
 				F7469C6A2193E58F00685156 /* AppDelegate.swift */,
-				F7469C6E2193E58F00685156 /* Main.storyboard */,
 				F7469C712193E59100685156 /* Assets.xcassets */,
 				F7469C762193E59100685156 /* Info.plist */,
 			);
@@ -117,6 +137,216 @@
 				F7469C8C2193E59100685156 /* Info.plist */,
 			);
 			path = TodayHeadlineUITests;
+			sourceTree = "<group>";
+		};
+		F7469C98219418FA00685156 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CA9219418FB00685156 /* Tool */,
+				F7469CA1219418FB00685156 /* Main */,
+				F7469C99219418FA00685156 /* Home */,
+				F7469CB8219418FB00685156 /* Video */,
+				F7469C9D219418FA00685156 /* Huoshan */,
+				F7469CA5219418FB00685156 /* Mine */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F7469C99219418FA00685156 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7469C9B219418FA00685156 /* Model */,
+				F7469C9C219418FA00685156 /* View */,
+				F7469C9A219418FA00685156 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F7469C9A219418FA00685156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7469C9B219418FA00685156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7469C9C219418FA00685156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7469C9D219418FA00685156 /* Huoshan */ = {
+			isa = PBXGroup;
+			children = (
+				F7469C9F219418FB00685156 /* Model */,
+				F7469CA0219418FB00685156 /* View */,
+				F7469C9E219418FA00685156 /* Controller */,
+			);
+			path = Huoshan;
+			sourceTree = "<group>";
+		};
+		F7469C9E219418FA00685156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7469C9F219418FB00685156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7469CA0219418FB00685156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7469CA1219418FB00685156 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CA3219418FB00685156 /* Model */,
+				F7469CA4219418FB00685156 /* View */,
+				F7469CA2219418FB00685156 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F7469CA2219418FB00685156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7469CA3219418FB00685156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7469CA4219418FB00685156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7469CA5219418FB00685156 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CA7219418FB00685156 /* Model */,
+				F7469CA8219418FB00685156 /* View */,
+				F7469CA6219418FB00685156 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F7469CA6219418FB00685156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7469CA7219418FB00685156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7469CA8219418FB00685156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7469CA9219418FB00685156 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CAA219418FB00685156 /* Extension */,
+				F7469CB2219418FB00685156 /* Network */,
+				F7469CB4219418FB00685156 /* Other */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F7469CAA219418FB00685156 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CAB219418FB00685156 /* Bundle+Extension.swift */,
+				F7469CAC219418FB00685156 /* Date+Extension.swift */,
+				F7469CAD219418FB00685156 /* UIBarButtonItem+Extension.swift */,
+				F7469CAE219418FB00685156 /* UIButton+Extension.swift */,
+				F7469CAF219418FB00685156 /* UIColor+Extension.swift */,
+				F7469CB0219418FB00685156 /* UIDevice+Extension.swift */,
+				F7469CB1219418FB00685156 /* UILabel+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F7469CB2219418FB00685156 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CB3219418FB00685156 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F7469CB4219418FB00685156 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CB5219418FB00685156 /* Constant.swift */,
+				F7469CB6219418FB00685156 /* Function.swift */,
+				F7469CB7219418FB00685156 /* URLString.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F7469CB8219418FB00685156 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				F7469CBA219418FB00685156 /* Model */,
+				F7469CBB219418FB00685156 /* View */,
+				F7469CB9219418FB00685156 /* Controller */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		F7469CB9219418FB00685156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7469CBA219418FB00685156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7469CBB219418FB00685156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +454,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7469C722193E59100685156 /* Assets.xcassets in Resources */,
-				F7469C702193E58F00685156 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +478,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7469CC6219418FB00685156 /* URLString.swift in Sources */,
+				F7469CC2219418FB00685156 /* UILabel+Extension.swift in Sources */,
+				F7469CBE219418FB00685156 /* UIBarButtonItem+Extension.swift in Sources */,
+				F7469CC1219418FB00685156 /* UIDevice+Extension.swift in Sources */,
 				F7469C6B2193E58F00685156 /* AppDelegate.swift in Sources */,
+				F7469CBC219418FB00685156 /* Bundle+Extension.swift in Sources */,
+				F7469CC3219418FB00685156 /* Network.swift in Sources */,
+				F7469CC0219418FB00685156 /* UIColor+Extension.swift in Sources */,
+				F7469CC4219418FB00685156 /* Constant.swift in Sources */,
+				F7469CBF219418FB00685156 /* UIButton+Extension.swift in Sources */,
+				F7469CBD219418FB00685156 /* Date+Extension.swift in Sources */,
+				F7469CC5219418FB00685156 /* Function.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +523,6 @@
 			targetProxy = F7469C872193E59100685156 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F7469C6E2193E58F00685156 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7469C6F2193E58F00685156 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F7469C8D2193E59100685156 /* Debug */ = {

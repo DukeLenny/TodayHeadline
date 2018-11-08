@@ -81,8 +81,8 @@ extension UIButton {
             
             if let horizontalSpace = horizontalSpace {
                 let edgeInset = horizontalSpace / 2.0
-                imageEdgeInsets = UIEdgeInsetsMake(0, -edgeInset, 0, edgeInset)
-                titleEdgeInsets = UIEdgeInsetsMake(0, edgeInset, 0, -edgeInset)
+                imageEdgeInsets = UIEdgeInsets(top: 0, left: -edgeInset, bottom: 0, right: edgeInset)
+                titleEdgeInsets = UIEdgeInsets(top: 0, left: edgeInset, bottom: 0, right: -edgeInset)
             }
         }
         

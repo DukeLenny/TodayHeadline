@@ -39,6 +39,6 @@ func navigationBarHeight() -> CGFloat {
 func tabBarHeight() -> CGFloat {
     let viewController = UIViewController()
     let tabBarController = UITabBarController()
-    tabBarController.addChildViewController(viewController)
+    tabBarController.addChild(viewController)
     return tabBarController.tabBar.bounds.height
 }

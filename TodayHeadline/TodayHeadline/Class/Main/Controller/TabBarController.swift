@@ -34,7 +34,7 @@ extension TabBarController {
         addChild(HomeViewController(), title: "首页", imageName: "home_tabbar_32x32_", selectedImageName: "home_tabbar_press_32x32_")
         addChild(VideoViewController(), title: "西瓜视频", imageName: "video_tabbar_32x32_", selectedImageName: "video_tabbar_press_32x32_")
         addChild(HuoshanViewController(), title: "小视频", imageName: "huoshan_tabbar_32x32_", selectedImageName: "huoshan_tabbar_press_32x32_")
-        addChild(MineViewController(), title: "我的", imageName: "mine_tabbar_32x32_", selectedImageName: "mine_tabbar_press_32x32_")
+        addChild(MineViewController(style: .grouped), title: "我的", imageName: "mine_tabbar_32x32_", selectedImageName: "mine_tabbar_press_32x32_")
     }
     
     private func addChild(_ childController: UIViewController, title: String, imageName: String, selectedImageName: String) {

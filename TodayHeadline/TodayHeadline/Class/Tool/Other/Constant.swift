@@ -33,4 +33,6 @@ let BottomBarHeight = tabBarHeight() + HomeIndicatorHeight
 let SystemVersion = UIDevice.current.systemVersion
 
 let DocumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+
+let GlobalBackgroundColor = UIColor.rgb(248.0, 249.0, 247.0)
 		

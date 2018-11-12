@@ -23,6 +23,8 @@ class TabBarController: UITabBarController {
 extension TabBarController {
     private func setUI() {
         UITabBar.appearance().tintColor = UIColor.rgb(245.0, 90.0, 93.0)
+        
+        setValue(TabBar(), forKey: "tabBar")
     }
 }
 

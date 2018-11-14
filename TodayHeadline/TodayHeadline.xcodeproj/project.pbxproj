@@ -29,6 +29,8 @@
 		F7469CCE219420B200685156 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CCD219420B200685156 /* VideoViewController.swift */; };
 		F7469CD0219420D400685156 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CCF219420D400685156 /* HuoshanViewController.swift */; };
 		F7469CD2219420F600685156 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CD1219420F600685156 /* MineViewController.swift */; };
+		F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23D219BBD6E00D2727E /* NetworkTool.swift */; };
+		F753B240219BC67800D2727E /* MineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23F219BC67800D2727E /* MineCellModel.swift */; };
 		F78C9C37219921D100523D8A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C9C36219921D100523D8A /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		F7469CCD219420B200685156 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		F7469CCF219420D400685156 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 		F7469CD1219420F600685156 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F753B23D219BBD6E00D2727E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		F753B23F219BC67800D2727E /* MineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCellModel.swift; sourceTree = "<group>"; };
 		F78C9C36219921D100523D8A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,6 +313,7 @@
 		F7469CA7219418FB00685156 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F753B23F219BC67800D2727E /* MineCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				F7469CB3219418FB00685156 /* Network.swift */,
+				F753B23D219BBD6E00D2727E /* NetworkTool.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -553,12 +559,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TodayHeadline/Pods-TodayHeadline-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,6 +586,8 @@
 				F7469CC821941FE900685156 /* TabBarController.swift in Sources */,
 				F78C9C37219921D100523D8A /* TabBar.swift in Sources */,
 				F7469CC2219418FB00685156 /* UILabel+Extension.swift in Sources */,
+				F753B240219BC67800D2727E /* MineCellModel.swift in Sources */,
+				F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */,
 				F7469CBE219418FB00685156 /* UIBarButtonItem+Extension.swift in Sources */,
 				F7469CC1219418FB00685156 /* UIDevice+Extension.swift in Sources */,
 				F7469CCC2194208000685156 /* HomeViewController.swift in Sources */,

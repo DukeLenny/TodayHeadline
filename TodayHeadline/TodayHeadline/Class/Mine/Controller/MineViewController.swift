@@ -14,6 +14,7 @@ class MineViewController: UITableViewController {
         super.viewDidLoad()
 
         setUI()
+        requestData()
     }
     
     override func viewDidLayoutSubviews() {
@@ -39,6 +40,15 @@ extension MineViewController {
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
         if #available(iOS 11.0, *) {
             tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
+        }
+    }
+}
+
+// MARK: - 网络请求
+extension MineViewController {
+    private func requestData() {
+        NetworkTool.requestMineCellData { (sections) in
+            
         }
     }
 }

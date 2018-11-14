@@ -8,5 +8,7 @@
 
 import Foundation
 
-let BaseURLString = ""
+let BaseURLString = "https://is.snssdk.com"
+
+let UserTabsURL = BaseURLString + "/user/tab/tabs/?"
 

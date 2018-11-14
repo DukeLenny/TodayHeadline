@@ -7,5 +7,7 @@ target 'TodayHeadline' do
 
   # Pods for TodayHeadline
   pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
 
 end

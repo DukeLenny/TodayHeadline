@@ -9,6 +9,8 @@
 import UIKit
 
 class MineViewController: UITableViewController {
+    
+    private lazy var sections: [[MineCellModel]] = [[MineCellModel]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +43,7 @@ extension MineViewController {
         if #available(iOS 11.0, *) {
             tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
         }
+        tableView.register(UINib(nibName: String(describing: MineNormalTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineNormalTableViewCell.self))
     }
 }
 
@@ -48,7 +51,15 @@ extension MineViewController {
 extension MineViewController {
     private func requestData() {
         NetworkTool.requestMineCellData { (sections) in
+            if !self.sections.isEmpty { self.sections.removeAll() }
+            var model0 = MineCellModel()
+            model0.text = "我的关注"
+            var models = [MineCellModel]()
+            models.append(model0)
+            self.sections.append(models)
+            self.sections += sections
             
+            self.tableView.reloadData()
         }
     }
 }
@@ -56,7 +67,7 @@ extension MineViewController {
 // MARK: - UITableViewDataSource
 extension MineViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return sections.count
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -78,12 +89,21 @@ extension MineViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return sections[section].count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = "\(indexPath.section)-\(indexPath.row)"
+//        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+//        let model = sections[indexPath.section][indexPath.row]
+//        cell.textLabel?.text = model.text
+//        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineNormalTableViewCell.self), for: indexPath) as! MineNormalTableViewCell
+        let model = sections[indexPath.section][indexPath.row]
+        cell.model = model
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

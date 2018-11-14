@@ -31,6 +31,8 @@
 		F7469CD2219420F600685156 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CD1219420F600685156 /* MineViewController.swift */; };
 		F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23D219BBD6E00D2727E /* NetworkTool.swift */; };
 		F753B240219BC67800D2727E /* MineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23F219BC67800D2727E /* MineCellModel.swift */; };
+		F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B241219C151000D2727E /* MineNormalTableViewCell.swift */; };
+		F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F753B242219C151000D2727E /* MineNormalTableViewCell.xib */; };
 		F78C9C37219921D100523D8A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C9C36219921D100523D8A /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		F7469CD1219420F600685156 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F753B23D219BBD6E00D2727E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		F753B23F219BC67800D2727E /* MineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCellModel.swift; sourceTree = "<group>"; };
+		F753B241219C151000D2727E /* MineNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineNormalTableViewCell.swift; sourceTree = "<group>"; };
+		F753B242219C151000D2727E /* MineNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineNormalTableViewCell.xib; sourceTree = "<group>"; };
 		F78C9C36219921D100523D8A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +325,8 @@
 		F7469CA8219418FB00685156 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F753B241219C151000D2727E /* MineNormalTableViewCell.swift */,
+				F753B242219C151000D2727E /* MineNormalTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7469C722193E59100685156 /* Assets.xcassets in Resources */,
+				F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +604,7 @@
 				F7469CBC219418FB00685156 /* Bundle+Extension.swift in Sources */,
 				F7469CC3219418FB00685156 /* Network.swift in Sources */,
 				F7469CD2219420F600685156 /* MineViewController.swift in Sources */,
+				F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */,
 				F7469CCE219420B200685156 /* VideoViewController.swift in Sources */,
 				F7469CC0219418FB00685156 /* UIColor+Extension.swift in Sources */,
 				F7469CC4219418FB00685156 /* Constant.swift in Sources */,

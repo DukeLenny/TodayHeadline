@@ -44,6 +44,7 @@ extension MineViewController {
             tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
         }
         tableView.register(UINib(nibName: String(describing: MineNormalTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineNormalTableViewCell.self))
+        tableView.register(UINib(nibName: String(describing: MineConcernTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineConcernTableViewCell.self))
     }
 }
 
@@ -71,7 +72,8 @@ extension MineViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10.0
+        // section == 1表示消息通知
+        return section == 1 ? CGFloat.leastNormalMagnitude : 10.0
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -97,8 +99,14 @@ extension MineViewController {
 //        let model = sections[indexPath.section][indexPath.row]
 //        cell.textLabel?.text = model.text
 //        return cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineNormalTableViewCell.self), for: indexPath) as! MineNormalTableViewCell
         let model = sections[indexPath.section][indexPath.row]
+        if indexPath.section == 0 && indexPath.row == 0 {
+            // 我的关注
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineConcernTableViewCell.self), for: indexPath) as! MineConcernTableViewCell
+            cell.model = model
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineNormalTableViewCell.self), for: indexPath) as! MineNormalTableViewCell
         cell.model = model
         return cell
     }

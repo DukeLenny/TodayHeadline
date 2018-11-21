@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MineNormalTableViewCell: UITableViewCell {
+class MineNormalTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var arrowImageView: UIImageView!

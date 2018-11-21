@@ -43,8 +43,10 @@ extension MineViewController {
         if #available(iOS 11.0, *) {
             tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
         }
-        tableView.register(UINib(nibName: String(describing: MineNormalTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineNormalTableViewCell.self))
-        tableView.register(UINib(nibName: String(describing: MineConcernTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineConcernTableViewCell.self))
+//        tableView.register(UINib(nibName: String(describing: MineNormalTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineNormalTableViewCell.self))
+        tableView.registerCell(MineNormalTableViewCell.self)
+//        tableView.register(UINib(nibName: String(describing: MineConcernTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineConcernTableViewCell.self))
+        tableView.registerCell(MineConcernTableViewCell.self)
     }
 }
 
@@ -102,11 +104,11 @@ extension MineViewController {
         let model = sections[indexPath.section][indexPath.row]
         if indexPath.section == 0 && indexPath.row == 0 {
             // 我的关注
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineConcernTableViewCell.self), for: indexPath) as! MineConcernTableViewCell
+            let cell = tableView.dequeueReusableCell(indexPath: indexPath) as MineConcernTableViewCell
             cell.model = model
             return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: MineNormalTableViewCell.self), for: indexPath) as! MineNormalTableViewCell
+        let cell = tableView.dequeueReusableCell(indexPath: indexPath) as MineNormalTableViewCell
         cell.model = model
         return cell
     }

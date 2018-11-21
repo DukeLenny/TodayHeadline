@@ -35,6 +35,9 @@
 		F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F753B242219C151000D2727E /* MineNormalTableViewCell.xib */; };
 		F7560C9421A52E9500E61B80 /* MineConcernTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9221A52E9500E61B80 /* MineConcernTableViewCell.swift */; };
 		F7560C9521A52E9500E61B80 /* MineConcernTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7560C9321A52E9500E61B80 /* MineConcernTableViewCell.xib */; };
+		F7560C9721A5462A00E61B80 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9621A5462A00E61B80 /* UIView+Extension.swift */; };
+		F7560C9921A54BFA00E61B80 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9821A54BFA00E61B80 /* UITableView+Extension.swift */; };
+		F7560C9B21A5582B00E61B80 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9A21A5582B00E61B80 /* UICollectionView+Extension.swift */; };
 		F78C9C37219921D100523D8A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C9C36219921D100523D8A /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +95,9 @@
 		F753B242219C151000D2727E /* MineNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineNormalTableViewCell.xib; sourceTree = "<group>"; };
 		F7560C9221A52E9500E61B80 /* MineConcernTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineConcernTableViewCell.swift; sourceTree = "<group>"; };
 		F7560C9321A52E9500E61B80 /* MineConcernTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineConcernTableViewCell.xib; sourceTree = "<group>"; };
+		F7560C9621A5462A00E61B80 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F7560C9821A54BFA00E61B80 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F7560C9A21A5582B00E61B80 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		F78C9C36219921D100523D8A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -357,6 +363,9 @@
 				F7469CAF219418FB00685156 /* UIColor+Extension.swift */,
 				F7469CB0219418FB00685156 /* UIDevice+Extension.swift */,
 				F7469CB1219418FB00685156 /* UILabel+Extension.swift */,
+				F7560C9621A5462A00E61B80 /* UIView+Extension.swift */,
+				F7560C9821A54BFA00E61B80 /* UITableView+Extension.swift */,
+				F7560C9A21A5582B00E61B80 /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -602,6 +611,7 @@
 				F7469CC2219418FB00685156 /* UILabel+Extension.swift in Sources */,
 				F753B240219BC67800D2727E /* MineCellModel.swift in Sources */,
 				F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */,
+				F7560C9B21A5582B00E61B80 /* UICollectionView+Extension.swift in Sources */,
 				F7469CBE219418FB00685156 /* UIBarButtonItem+Extension.swift in Sources */,
 				F7469CC1219418FB00685156 /* UIDevice+Extension.swift in Sources */,
 				F7469CCC2194208000685156 /* HomeViewController.swift in Sources */,
@@ -613,7 +623,9 @@
 				F7469CD2219420F600685156 /* MineViewController.swift in Sources */,
 				F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */,
 				F7469CCE219420B200685156 /* VideoViewController.swift in Sources */,
+				F7560C9921A54BFA00E61B80 /* UITableView+Extension.swift in Sources */,
 				F7469CC0219418FB00685156 /* UIColor+Extension.swift in Sources */,
+				F7560C9721A5462A00E61B80 /* UIView+Extension.swift in Sources */,
 				F7469CC4219418FB00685156 /* Constant.swift in Sources */,
 				F7469CBF219418FB00685156 /* UIButton+Extension.swift in Sources */,
 				F7560C9421A52E9500E61B80 /* MineConcernTableViewCell.swift in Sources */,

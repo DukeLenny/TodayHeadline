@@ -12,3 +12,5 @@ let BaseURLString = "https://is.snssdk.com"
 
 let UserTabsURL = BaseURLString + "/user/tab/tabs/?"
 
+let MyFollowURL = BaseURLString + "/concern/v2/follow/my_follow/?"
+

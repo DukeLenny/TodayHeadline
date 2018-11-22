@@ -11,6 +11,7 @@ import UIKit
 class MineViewController: UITableViewController {
     
     private lazy var sections: [[MineCellModel]] = [[MineCellModel]]()
+    private lazy var concerns: [MineConcernModel] = [MineConcernModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +64,17 @@ extension MineViewController {
             self.sections += sections
             
             self.tableView.reloadData()
+            
+            self.requestMyConcernData()
+        }
+    }
+    
+    private func requestMyConcernData() {
+        NetworkTool.requestMyConcernData { (concerns) in
+            if !self.concerns.isEmpty { self.concerns.removeAll() }
+            self.concerns += concerns
+            
+            self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
         }
     }
 }
@@ -96,6 +108,14 @@ extension MineViewController {
         return sections[section].count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 && indexPath.row == 0 {
+            // 我的关注
+            return concerns.count <= 1 ? 44.0 : 44.0 + 74.0
+        }
+        return 44.0
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
 //        let model = sections[indexPath.section][indexPath.row]
@@ -106,6 +126,7 @@ extension MineViewController {
             // 我的关注
             let cell = tableView.dequeueReusableCell(indexPath: indexPath) as MineConcernTableViewCell
             cell.model = model
+            cell.concerns = concerns
             return cell
         }
         let cell = tableView.dequeueReusableCell(indexPath: indexPath) as MineNormalTableViewCell

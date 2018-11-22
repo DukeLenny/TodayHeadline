@@ -26,9 +26,9 @@ struct MineConcernModel: HandyJSON {
     var type: String?
     var icon: String?
     var userid: Int?
-    var is_verify: Bool?
+    var is_verify: Bool = false
     var media_id: Int?
-    var tips: Bool?
+    var tips: Bool = false
     var id: Int?
     var user_auth_info: String?
     var userAuthInfo: UserAuthInfo? {

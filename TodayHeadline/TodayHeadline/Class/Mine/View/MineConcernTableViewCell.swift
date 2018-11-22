@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MineConcernTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     
@@ -19,14 +20,41 @@ class MineConcernTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
+        collectionView.registerCell(MyConcernCollectionViewCell.self)
     }
     
     var model: MineCellModel? {
         didSet {
             titleLabel.text = model?.text
-            subtitleLabel.text = model?.grey_text
+//            subtitleLabel.text = model?.grey_text
         }
     }
     
+    var concerns: [MineConcernModel]? {
+        didSet {
+            guard let concerns = concerns else { return }
+            let firstConcern = concerns.first
+            subtitleLabel.text = firstConcern?.name
+            iconImageView.kf.setImage(with: URL(string: firstConcern?.icon ?? ""), placeholder: nil)
+            collectionView.reloadData()
+            
+            subtitleLabel.isHidden = concerns.count != 1
+            iconImageView.isHidden = concerns.count != 1
+            collectionView.isHidden = concerns.count < 2
+        }
+    }
+    
+}
+
+extension MineConcernTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return concerns?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(indexPath: indexPath) as MyConcernCollectionViewCell
+        let concern = concerns![indexPath.item]
+        cell.concern = concern
+        return cell
+    }
 }

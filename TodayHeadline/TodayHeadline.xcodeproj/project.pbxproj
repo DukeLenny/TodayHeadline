@@ -29,6 +29,8 @@
 		F7469CCE219420B200685156 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CCD219420B200685156 /* VideoViewController.swift */; };
 		F7469CD0219420D400685156 /* HuoshanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CCF219420D400685156 /* HuoshanViewController.swift */; };
 		F7469CD2219420F600685156 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CD1219420F600685156 /* MineViewController.swift */; };
+		F747035421A67E1700C2C10F /* MyConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */; };
+		F747035521A67E1700C2C10F /* MyConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */; };
 		F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23D219BBD6E00D2727E /* NetworkTool.swift */; };
 		F753B240219BC67800D2727E /* MineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23F219BC67800D2727E /* MineCellModel.swift */; };
 		F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B241219C151000D2727E /* MineNormalTableViewCell.swift */; };
@@ -89,6 +91,8 @@
 		F7469CCD219420B200685156 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		F7469CCF219420D400685156 /* HuoshanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuoshanViewController.swift; sourceTree = "<group>"; };
 		F7469CD1219420F600685156 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCollectionViewCell.swift; sourceTree = "<group>"; };
+		F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCollectionViewCell.xib; sourceTree = "<group>"; };
 		F753B23D219BBD6E00D2727E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		F753B23F219BC67800D2727E /* MineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCellModel.swift; sourceTree = "<group>"; };
 		F753B241219C151000D2727E /* MineNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineNormalTableViewCell.swift; sourceTree = "<group>"; };
@@ -339,6 +343,8 @@
 				F753B242219C151000D2727E /* MineNormalTableViewCell.xib */,
 				F7560C9221A52E9500E61B80 /* MineConcernTableViewCell.swift */,
 				F7560C9321A52E9500E61B80 /* MineConcernTableViewCell.xib */,
+				F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */,
+				F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7560C9521A52E9500E61B80 /* MineConcernTableViewCell.xib in Resources */,
+				F747035521A67E1700C2C10F /* MyConcernCollectionViewCell.xib in Resources */,
 				F7469C722193E59100685156 /* Assets.xcassets in Resources */,
 				F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */,
 			);
@@ -583,6 +590,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TodayHeadline/Pods-TodayHeadline-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -591,6 +599,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,6 +631,7 @@
 				F7469CC3219418FB00685156 /* Network.swift in Sources */,
 				F7469CD2219420F600685156 /* MineViewController.swift in Sources */,
 				F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */,
+				F747035421A67E1700C2C10F /* MyConcernCollectionViewCell.swift in Sources */,
 				F7469CCE219420B200685156 /* VideoViewController.swift in Sources */,
 				F7560C9921A54BFA00E61B80 /* UITableView+Extension.swift in Sources */,
 				F7469CC0219418FB00685156 /* UIColor+Extension.swift in Sources */,

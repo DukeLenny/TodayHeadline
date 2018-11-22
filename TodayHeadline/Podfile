@@ -9,5 +9,6 @@ target 'TodayHeadline' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'HandyJSON'
+  pod 'Kingfisher'
 
 end

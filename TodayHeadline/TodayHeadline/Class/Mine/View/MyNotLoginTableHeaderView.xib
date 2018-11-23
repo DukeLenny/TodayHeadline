@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyNotLoginTableHeaderView" customModule="TodayHeadline" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="L9m-Fz-7gX">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="260"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Dp-OX-S1u">
+                    <rect key="frame" x="0.0" y="190" width="440" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR8-1T-RIX">
+                            <rect key="frame" x="0.0" y="0.0" width="146.5" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-24" minY="24" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="37" minY="-34" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="收藏" image="favoriteicon_profile_24x24_">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="collectionButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="NsR-qY-axA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5V-rn-INz">
+                            <rect key="frame" x="293.5" y="0.0" width="146.5" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-24" minY="24" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="37" minY="-34" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="夜间" image="nighticon_profile_24x24_">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="nightButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="92B-4u-eTl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlD-pb-ZIn">
+                            <rect key="frame" x="146.5" y="0.0" width="147" height="70"/>
+                            <inset key="titleEdgeInsets" minX="-24" minY="24" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="37" minY="-34" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="历史" image="history_profile_24x24_">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="historyButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="hCj-7P-rIH"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="N5V-rn-INz" secondAttribute="trailing" id="0fl-fH-B0W"/>
+                        <constraint firstItem="zlD-pb-ZIn" firstAttribute="top" secondItem="6Dp-OX-S1u" secondAttribute="top" id="29P-OF-T7E"/>
+                        <constraint firstAttribute="bottom" secondItem="DR8-1T-RIX" secondAttribute="bottom" id="3ez-on-kto"/>
+                        <constraint firstItem="DR8-1T-RIX" firstAttribute="top" secondItem="6Dp-OX-S1u" secondAttribute="top" id="BuQ-L0-jzJ"/>
+                        <constraint firstItem="zlD-pb-ZIn" firstAttribute="width" secondItem="DR8-1T-RIX" secondAttribute="width" id="Oss-cn-aS5"/>
+                        <constraint firstAttribute="height" constant="70" id="ToH-0g-tsL"/>
+                        <constraint firstAttribute="bottom" secondItem="zlD-pb-ZIn" secondAttribute="bottom" id="Uzi-m3-Zpi"/>
+                        <constraint firstItem="zlD-pb-ZIn" firstAttribute="leading" secondItem="DR8-1T-RIX" secondAttribute="trailing" id="Vq4-7l-3Ge"/>
+                        <constraint firstAttribute="bottom" secondItem="N5V-rn-INz" secondAttribute="bottom" id="XxV-de-tQT"/>
+                        <constraint firstItem="N5V-rn-INz" firstAttribute="leading" secondItem="zlD-pb-ZIn" secondAttribute="trailing" id="f1Y-Sg-lTJ"/>
+                        <constraint firstItem="N5V-rn-INz" firstAttribute="width" secondItem="DR8-1T-RIX" secondAttribute="width" id="mQL-Zj-3O4"/>
+                        <constraint firstItem="DR8-1T-RIX" firstAttribute="leading" secondItem="6Dp-OX-S1u" secondAttribute="leading" id="qTg-u3-bAk"/>
+                        <constraint firstItem="N5V-rn-INz" firstAttribute="top" secondItem="6Dp-OX-S1u" secondAttribute="top" id="u1T-j2-xcU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6Dp-OX-S1u" secondAttribute="bottom" id="0Sx-16-96O"/>
+                <constraint firstItem="L9m-Fz-7gX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cqj-qV-GiV"/>
+                <constraint firstItem="6Dp-OX-S1u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mff-yh-v2t"/>
+                <constraint firstAttribute="trailing" secondItem="6Dp-OX-S1u" secondAttribute="trailing" id="Ovv-We-odm"/>
+                <constraint firstItem="L9m-Fz-7gX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yl5-60-SLn"/>
+                <constraint firstAttribute="bottom" secondItem="L9m-Fz-7gX" secondAttribute="bottom" id="Ze7-cF-cQ4"/>
+                <constraint firstAttribute="trailing" secondItem="L9m-Fz-7gX" secondAttribute="trailing" id="lcn-B4-XbK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionButton" destination="DR8-1T-RIX" id="Hg4-d4-m7Z"/>
+                <outlet property="historyButton" destination="zlD-pb-ZIn" id="5gd-Wt-KAS"/>
+                <outlet property="nightButton" destination="N5V-rn-INz" id="xhl-xV-ZMV"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="51.27436281859071"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="favoriteicon_profile_24x24_" width="24" height="24"/>
+        <image name="history_profile_24x24_" width="24" height="24"/>
+        <image name="nighticon_profile_24x24_" width="24" height="24"/>
+        <image name="wallpaper_profile_night" width="320" height="180"/>
+    </resources>
+</document>

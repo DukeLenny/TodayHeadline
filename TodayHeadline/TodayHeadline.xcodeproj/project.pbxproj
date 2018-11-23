@@ -31,6 +31,8 @@
 		F7469CD2219420F600685156 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7469CD1219420F600685156 /* MineViewController.swift */; };
 		F747035421A67E1700C2C10F /* MyConcernCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */; };
 		F747035521A67E1700C2C10F /* MyConcernCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */; };
+		F74FF31821A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74FF31721A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift */; };
+		F74FF31A21A7D406009F7A12 /* MyNotLoginTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F74FF31921A7D406009F7A12 /* MyNotLoginTableHeaderView.xib */; };
 		F753B23E219BBD6E00D2727E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23D219BBD6E00D2727E /* NetworkTool.swift */; };
 		F753B240219BC67800D2727E /* MineCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B23F219BC67800D2727E /* MineCellModel.swift */; };
 		F753B243219C151000D2727E /* MineNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753B241219C151000D2727E /* MineNormalTableViewCell.swift */; };
@@ -93,6 +95,8 @@
 		F7469CD1219420F600685156 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyConcernCollectionViewCell.swift; sourceTree = "<group>"; };
 		F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyConcernCollectionViewCell.xib; sourceTree = "<group>"; };
+		F74FF31721A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotLoginTableHeaderView.swift; sourceTree = "<group>"; };
+		F74FF31921A7D406009F7A12 /* MyNotLoginTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyNotLoginTableHeaderView.xib; sourceTree = "<group>"; };
 		F753B23D219BBD6E00D2727E /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		F753B23F219BC67800D2727E /* MineCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCellModel.swift; sourceTree = "<group>"; };
 		F753B241219C151000D2727E /* MineNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineNormalTableViewCell.swift; sourceTree = "<group>"; };
@@ -345,6 +349,8 @@
 				F7560C9321A52E9500E61B80 /* MineConcernTableViewCell.xib */,
 				F747035221A67E1700C2C10F /* MyConcernCollectionViewCell.swift */,
 				F747035321A67E1700C2C10F /* MyConcernCollectionViewCell.xib */,
+				F74FF31721A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift */,
+				F74FF31921A7D406009F7A12 /* MyNotLoginTableHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7560C9521A52E9500E61B80 /* MineConcernTableViewCell.xib in Resources */,
+				F74FF31A21A7D406009F7A12 /* MyNotLoginTableHeaderView.xib in Resources */,
 				F747035521A67E1700C2C10F /* MyConcernCollectionViewCell.xib in Resources */,
 				F7469C722193E59100685156 /* Assets.xcassets in Resources */,
 				F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */,
@@ -624,6 +631,7 @@
 				F7469CBE219418FB00685156 /* UIBarButtonItem+Extension.swift in Sources */,
 				F7469CC1219418FB00685156 /* UIDevice+Extension.swift in Sources */,
 				F7469CCC2194208000685156 /* HomeViewController.swift in Sources */,
+				F74FF31821A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift in Sources */,
 				F7469CCA2194201400685156 /* NavigationController.swift in Sources */,
 				F7469C6B2193E58F00685156 /* AppDelegate.swift in Sources */,
 				F7469CD0219420D400685156 /* HuoshanViewController.swift in Sources */,

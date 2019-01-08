@@ -10,5 +10,6 @@ target 'TodayHeadline' do
   pod 'SwiftyJSON'
   pod 'HandyJSON'
   pod 'Kingfisher'
+  pod 'IBAnimatable'
 
 end

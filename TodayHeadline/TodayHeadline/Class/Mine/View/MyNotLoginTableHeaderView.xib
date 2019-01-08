@@ -73,32 +73,106 @@
                         <constraint firstItem="N5V-rn-INz" firstAttribute="top" secondItem="6Dp-OX-S1u" secondAttribute="top" id="u1T-j2-xcU"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hth-ts-mL7" customClass="AnimatableButton" customModule="IBAnimatable">
+                    <rect key="frame" x="162.5" y="141" width="115" height="29"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="cXs-r8-lEh"/>
+                        <constraint firstAttribute="width" constant="115" id="nTD-Ck-0qp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="更多登录方式 &gt;"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="moreLoginWaysButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="jMi-q6-0B9"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-bD-JPQ">
+                    <rect key="frame" x="0.0" y="50" width="440" height="66"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zh-BB-8gM">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="66"/>
+                            <state key="normal" image="cellphoneicon_login_profile_66x66_"/>
+                            <connections>
+                                <action selector="phoneButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="hdr-50-rb6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39l-Di-Kc1">
+                            <rect key="frame" x="110" y="0.0" width="110" height="66"/>
+                            <state key="normal" image="qqicon_login_profile_66x66_"/>
+                            <connections>
+                                <action selector="phoneButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="EgP-oG-9eC"/>
+                                <action selector="qqButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="lDz-JW-yzG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHI-eE-bax">
+                            <rect key="frame" x="220" y="0.0" width="110" height="66"/>
+                            <state key="normal" image="weixinicon_login_profile_66x66_"/>
+                            <connections>
+                                <action selector="phoneButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="cGW-5F-gG0"/>
+                                <action selector="weixinButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="dSy-jR-RU1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGH-rq-GGJ">
+                            <rect key="frame" x="330" y="0.0" width="110" height="66"/>
+                            <state key="normal" image="sinaicon_login_profile_66x66_"/>
+                            <connections>
+                                <action selector="phoneButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bbw-lh-JMh"/>
+                                <action selector="weiboButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="IjP-0h-XV0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZHI-eE-bax" firstAttribute="width" secondItem="7Zh-BB-8gM" secondAttribute="width" id="04U-Kx-vUi"/>
+                        <constraint firstItem="uGH-rq-GGJ" firstAttribute="width" secondItem="7Zh-BB-8gM" secondAttribute="width" id="akp-aC-jw9"/>
+                        <constraint firstItem="39l-Di-Kc1" firstAttribute="width" secondItem="7Zh-BB-8gM" secondAttribute="width" id="zSB-rh-51H"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6Dp-OX-S1u" secondAttribute="bottom" id="0Sx-16-96O"/>
                 <constraint firstItem="L9m-Fz-7gX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cqj-qV-GiV"/>
+                <constraint firstItem="hth-ts-mL7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JHx-sI-xH3"/>
                 <constraint firstItem="6Dp-OX-S1u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mff-yh-v2t"/>
                 <constraint firstAttribute="trailing" secondItem="6Dp-OX-S1u" secondAttribute="trailing" id="Ovv-We-odm"/>
+                <constraint firstItem="6Dp-OX-S1u" firstAttribute="top" secondItem="hth-ts-mL7" secondAttribute="bottom" constant="20" id="VXm-zC-laF"/>
                 <constraint firstItem="L9m-Fz-7gX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yl5-60-SLn"/>
+                <constraint firstItem="eKg-bD-JPQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Z2T-i8-nJj"/>
                 <constraint firstAttribute="bottom" secondItem="L9m-Fz-7gX" secondAttribute="bottom" id="Ze7-cF-cQ4"/>
                 <constraint firstAttribute="trailing" secondItem="L9m-Fz-7gX" secondAttribute="trailing" id="lcn-B4-XbK"/>
+                <constraint firstItem="hth-ts-mL7" firstAttribute="top" secondItem="eKg-bD-JPQ" secondAttribute="bottom" constant="25" id="oAN-8h-coH"/>
+                <constraint firstAttribute="trailing" secondItem="eKg-bD-JPQ" secondAttribute="trailing" id="t8c-q1-pOt"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="bgImageView" destination="L9m-Fz-7gX" id="MWw-fM-Wgf"/>
                 <outlet property="collectionButton" destination="DR8-1T-RIX" id="Hg4-d4-m7Z"/>
                 <outlet property="historyButton" destination="zlD-pb-ZIn" id="5gd-Wt-KAS"/>
+                <outlet property="moreLoginWaysButton" destination="hth-ts-mL7" id="klJ-Q0-mf7"/>
                 <outlet property="nightButton" destination="N5V-rn-INz" id="xhl-xV-ZMV"/>
+                <outlet property="phoneButton" destination="7Zh-BB-8gM" id="IBY-Cm-0ft"/>
+                <outlet property="qqButton" destination="39l-Di-Kc1" id="5yq-7G-aXa"/>
+                <outlet property="weiboButton" destination="uGH-rq-GGJ" id="lqn-SC-4wn"/>
+                <outlet property="weixinButton" destination="ZHI-eE-bax" id="6zw-RL-zYp"/>
             </connections>
             <point key="canvasLocation" x="52.799999999999997" y="51.27436281859071"/>
         </view>
     </objects>
     <resources>
+        <image name="cellphoneicon_login_profile_66x66_" width="66" height="66"/>
         <image name="favoriteicon_profile_24x24_" width="24" height="24"/>
         <image name="history_profile_24x24_" width="24" height="24"/>
         <image name="nighticon_profile_24x24_" width="24" height="24"/>
+        <image name="qqicon_login_profile_66x66_" width="66" height="66"/>
+        <image name="sinaicon_login_profile_66x66_" width="66" height="66"/>
         <image name="wallpaper_profile_night" width="320" height="180"/>
+        <image name="weixinicon_login_profile_66x66_" width="66" height="66"/>
     </resources>
 </document>

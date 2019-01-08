@@ -8,10 +8,21 @@
 
 import UIKit
 
+private let kBgImageViewHeight: CGFloat = 260.0
+
 class MineViewController: UITableViewController {
     
     private lazy var sections: [[MineCellModel]] = [[MineCellModel]]()
     private lazy var concerns: [MineConcernModel] = [MineConcernModel]()
+    
+    private lazy var tableHeaderView: MyNotLoginTableHeaderView = {
+        let tableHeaderView = MyNotLoginTableHeaderView.instance()
+        return tableHeaderView
+    }()
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +35,18 @@ class MineViewController: UITableViewController {
         super.viewDidLayoutSubviews()
         
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
 }
@@ -39,10 +62,12 @@ extension MineViewController {
         tableView.backgroundColor = GlobalBackgroundColor
 //        tableView.tableFooterView = UIView()
         tableView.showsVerticalScrollIndicator = false
-        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+//        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
+        tableView.tableHeaderView = tableHeaderView
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
         if #available(iOS 11.0, *) {
-            tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
+//            tableView.contentInset = UIEdgeInsets(top: TopBarHeight, left: 0, bottom: BottomBarHeight, right: 0)
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: BottomBarHeight, right: 0)
         }
 //        tableView.register(UINib(nibName: String(describing: MineNormalTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: MineNormalTableViewCell.self))
         tableView.registerCell(MineNormalTableViewCell.self)
@@ -136,5 +161,22 @@ extension MineViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+// MARK: - UIScrollViewDelegate
+extension MineViewController {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0 {
+            // 下拉
+            let height = kBgImageViewHeight + abs(offsetY)
+            let width = ScreenWidth * (height / kBgImageViewHeight)
+            let x = -((width - ScreenWidth) * 0.5)
+            let y = offsetY
+            tableHeaderView.bgImageView.frame = CGRect(x: x, y: y, width: width, height: height)
+        } else {
+            tableHeaderView.bgImageView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: kBgImageViewHeight)
+        }
     }
 }

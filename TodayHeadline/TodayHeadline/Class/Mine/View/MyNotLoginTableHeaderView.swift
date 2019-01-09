@@ -26,6 +26,12 @@ class MyNotLoginTableHeaderView: UIView {
         return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! MyNotLoginTableHeaderView
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        bgImageView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: kBgImageViewHeight)
+    }
+    
     @objc @IBAction private func collectionButtonClicked(_ sender: UIButton) {
         
     }

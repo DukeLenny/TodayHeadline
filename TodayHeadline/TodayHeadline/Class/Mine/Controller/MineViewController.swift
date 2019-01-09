@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kBgImageViewHeight: CGFloat = 260.0
+let kBgImageViewHeight: CGFloat = 260.0
 
 class MineViewController: UITableViewController {
     

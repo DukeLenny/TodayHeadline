@@ -42,6 +42,9 @@
 		F7560C9721A5462A00E61B80 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9621A5462A00E61B80 /* UIView+Extension.swift */; };
 		F7560C9921A54BFA00E61B80 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9821A54BFA00E61B80 /* UITableView+Extension.swift */; };
 		F7560C9B21A5582B00E61B80 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7560C9A21A5582B00E61B80 /* UICollectionView+Extension.swift */; };
+		F7703F5621EC87F6007128F6 /* Default_Theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7703F5521EC87F6007128F6 /* Default_Theme.plist */; };
+		F7703F5821EC888E007128F6 /* Night_Theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7703F5721EC888E007128F6 /* Night_Theme.plist */; };
+		F7703F5B21EC89D6007128F6 /* THTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7703F5A21EC89D6007128F6 /* THTheme.swift */; };
 		F78C9C37219921D100523D8A /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C9C36219921D100523D8A /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +109,9 @@
 		F7560C9621A5462A00E61B80 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F7560C9821A54BFA00E61B80 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		F7560C9A21A5582B00E61B80 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		F7703F5521EC87F6007128F6 /* Default_Theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Default_Theme.plist; sourceTree = "<group>"; };
+		F7703F5721EC888E007128F6 /* Night_Theme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Night_Theme.plist; sourceTree = "<group>"; };
+		F7703F5A21EC89D6007128F6 /* THTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THTheme.swift; sourceTree = "<group>"; };
 		F78C9C36219921D100523D8A /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,7 @@
 				F7469C6A2193E58F00685156 /* AppDelegate.swift */,
 				F7469C712193E59100685156 /* Assets.xcassets */,
 				F7469C762193E59100685156 /* Info.plist */,
+				F7703F5321EC875A007128F6 /* Resource */,
 			);
 			path = TodayHeadline;
 			sourceTree = "<group>";
@@ -361,6 +368,7 @@
 				F7469CAA219418FB00685156 /* Extension */,
 				F7469CB2219418FB00685156 /* Network */,
 				F7469CB4219418FB00685156 /* Other */,
+				F7703F5921EC899D007128F6 /* Theme */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -431,6 +439,31 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F7703F5321EC875A007128F6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F7703F5421EC875A007128F6 /* Theme */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F7703F5421EC875A007128F6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F7703F5521EC87F6007128F6 /* Default_Theme.plist */,
+				F7703F5721EC888E007128F6 /* Night_Theme.plist */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F7703F5921EC899D007128F6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F7703F5A21EC89D6007128F6 /* THTheme.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,10 +572,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7703F5821EC888E007128F6 /* Night_Theme.plist in Resources */,
 				F7560C9521A52E9500E61B80 /* MineConcernTableViewCell.xib in Resources */,
 				F74FF31A21A7D406009F7A12 /* MyNotLoginTableHeaderView.xib in Resources */,
 				F747035521A67E1700C2C10F /* MyConcernCollectionViewCell.xib in Resources */,
 				F7469C722193E59100685156 /* Assets.xcassets in Resources */,
+				F7703F5621EC87F6007128F6 /* Default_Theme.plist in Resources */,
 				F753B244219C151000D2727E /* MineNormalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +634,7 @@
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -609,6 +645,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,6 +673,7 @@
 				F74FF31821A7D3E7009F7A12 /* MyNotLoginTableHeaderView.swift in Sources */,
 				F7469CCA2194201400685156 /* NavigationController.swift in Sources */,
 				F7469C6B2193E58F00685156 /* AppDelegate.swift in Sources */,
+				F7703F5B21EC89D6007128F6 /* THTheme.swift in Sources */,
 				F7469CD0219420D400685156 /* HuoshanViewController.swift in Sources */,
 				F7469CBC219418FB00685156 /* Bundle+Extension.swift in Sources */,
 				F7469CC3219418FB00685156 /* Network.swift in Sources */,

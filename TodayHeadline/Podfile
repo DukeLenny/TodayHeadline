@@ -11,5 +11,6 @@ target 'TodayHeadline' do
   pod 'HandyJSON'
   pod 'Kingfisher'
   pod 'IBAnimatable'
+  pod 'SwiftTheme'
 
 end

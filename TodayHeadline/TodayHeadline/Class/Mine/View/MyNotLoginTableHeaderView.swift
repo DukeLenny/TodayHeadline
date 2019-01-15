@@ -8,6 +8,7 @@
 
 import UIKit
 import IBAnimatable
+import SwiftTheme
 
 class MyNotLoginTableHeaderView: UIView {
     
@@ -30,6 +31,17 @@ class MyNotLoginTableHeaderView: UIView {
         super.awakeFromNib()
         
         bgImageView.frame = CGRect(x: 0, y: 0, width: ScreenWidth, height: kBgImageViewHeight)
+        
+        phoneButton.theme_setImage("images.cellphoneicon_login_profile", forState: .normal)
+        qqButton.theme_setImage("images.qqicon_login_profile", forState: .normal)
+        weixinButton.theme_setImage("images.weixinicon_login_profile", forState: .normal)
+        weiboButton.theme_setImage("images.sinaicon_login_profile", forState: .normal)
+        collectionButton.theme_setImage("images.favoriteicon_profile", forState: .normal)
+        historyButton.theme_setImage("images.history_profile", forState: .normal)
+        nightButton.theme_setImage("images.nighticon_profile", forState: .normal)
+        
+        nightButton.setTitle("日间", for: .selected)
+        nightButton.isSelected = getIsNight()
     }
     
     @objc @IBAction private func collectionButtonClicked(_ sender: UIButton) {
@@ -41,7 +53,11 @@ class MyNotLoginTableHeaderView: UIView {
     }
     
     @objc @IBAction private func nightButtonClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
         
+        THTheme.switchToNight(sender.isSelected)
+        
+        saveIsNight(sender.isSelected)
     }
     
     @objc @IBAction private func moreLoginWaysButtonClicked(_ sender: AnimatableButton) {

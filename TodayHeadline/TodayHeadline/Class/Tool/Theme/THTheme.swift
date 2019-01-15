@@ -33,4 +33,8 @@ enum THTheme: Int {
     static func isNight() -> Bool {
         return current == night 
     }
+    
+    static func switchToNight(_ night: Bool) {
+        switchToTheme(night ? .night : .day)
+    }
 }

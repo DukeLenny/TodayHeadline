@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SwiftTheme
 
 class MineConcernTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     
@@ -21,6 +22,8 @@ class MineConcernTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
         super.awakeFromNib()
         
         collectionView.registerCell(MyConcernCollectionViewCell.self)
+        
+        arrowImageView.theme_image = "images.setting_rightarrow"
     }
     
     var model: MineCellModel? {

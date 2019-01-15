@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftTheme
 
 class MineNormalTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     
@@ -17,6 +18,8 @@ class MineNormalTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        arrowImageView.theme_image = "images.setting_rightarrow"
     }
     
     var model: MineCellModel? {

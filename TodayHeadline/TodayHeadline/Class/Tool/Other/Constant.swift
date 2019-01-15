@@ -34,5 +34,9 @@ let SystemVersion = UIDevice.current.systemVersion
 
 let DocumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
 
+let StandardUserDefaults = UserDefaults.standard
+
 let GlobalBackgroundColor = UIColor.rgb(248.0, 249.0, 247.0)
+
+let kIsNight = "isNight"
 		

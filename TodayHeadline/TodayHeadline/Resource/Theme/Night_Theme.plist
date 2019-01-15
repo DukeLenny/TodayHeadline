@@ -3,7 +3,62 @@
 <plist version="1.0">
 <dict>
 	<key>images</key>
-	<dict/>
+	<dict>
+		<key>air_download_option</key>
+		<string>air_download_option_night_20x20_</string>
+		<key>air_download_option_press</key>
+		<string>air_download_option_press_night_20x20_</string>
+		<key>cellphoneicon_login_profile</key>
+		<string>cellphoneicon_login_profile_night_66x66_</string>
+		<key>favoriteicon_profile</key>
+		<string>favoriteicon_profile_night_24x24_</string>
+		<key>history_profile</key>
+		<string>history_profile_night_24x24_</string>
+		<key>qqicon_login_profile</key>
+		<string>qqicon_login_profile_night_66x66_</string>
+		<key>setting_rightarrow</key>
+		<string>setting_rightarrow_night_8x14_</string>
+		<key>sinaicon_login_profile</key>
+		<string>sinaicon_login_profile_night_66x66_</string>
+		<key>weixinicon_login_profile</key>
+		<string>weixinicon_login_profile_night_66x66_</string>
+		<key>feed_publish</key>
+		<string>feed_publish_night_44x44_</string>
+		<key>feed_publish_close</key>
+		<string>feed_publish_close_night_44x44_</string>
+		<key>feed_publish_press</key>
+		<string>feed_publish_press_night_44x44_</string>
+		<key>home_tabbar</key>
+		<string>home_tabbar_night_32x32_</string>
+		<key>home_tabbar_press</key>
+		<string>home_tabbar_press_night_32x32_</string>
+		<key>huoshan_tabbar</key>
+		<string>huoshan_tabbar_night_32x32_</string>
+		<key>huoshan_tabbar_press</key>
+		<string>huoshan_tabbar_press_night_32x32_</string>
+		<key>mine_tabbar</key>
+		<string>mine_tabbar_night_32x32_</string>
+		<key>mine_tabbar_press</key>
+		<string>mine_tabbar_press_night_32x32_</string>
+		<key>no_login_tabbar</key>
+		<string>no_login_tabbar_night_32x32_</string>
+		<key>no_login_tabbar_press</key>
+		<string>no_login_tabbar_press_night_32x32_</string>
+		<key>redpackage_tabbar</key>
+		<string>redpackage_tabbar_night_32x32_</string>
+		<key>redpackage_tabbar_press</key>
+		<string>redpackage_tabbar_press_night_32x32_</string>
+		<key>video_tabbar</key>
+		<string>video_tabbar_night_32x32_</string>
+		<key>video_tabbar_press</key>
+		<string>video_tabbar_press_night_32x32_</string>
+		<key>weitoutiao_tabbar</key>
+		<string>weitoutiao_tabbar_night_32x32_</string>
+		<key>weitoutiao_tabbar_press</key>
+		<string>weitoutiao_tabbar_press_night_32x32_</string>
+		<key>nighticon_profile</key>
+		<string>dayicon_profile_night_24x24_</string>
+	</dict>
 	<key>colors</key>
 	<dict/>
 </dict>

@@ -42,3 +42,20 @@ func tabBarHeight() -> CGFloat {
     tabBarController.addChild(viewController)
     return tabBarController.tabBar.bounds.height
 }
+
+/// 在UserDefaults中获取是否是夜间模式
+///
+/// - Returns: Bool
+func getIsNight() -> Bool {
+    return StandardUserDefaults.bool(forKey: kIsNight)
+}
+
+/// 将是否是夜间模式存储到UserDefaults中
+///
+/// - Parameter isNight: 是否是夜间模式
+func saveIsNight(_ isNight: Bool) {
+    StandardUserDefaults.set(isNight, forKey: kIsNight)
+    StandardUserDefaults.synchronize()
+}
+
+

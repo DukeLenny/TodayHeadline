@@ -10,6 +10,8 @@ import UIKit
 import IBAnimatable
 import SwiftTheme
 
+let NightThemeUpdateNotification = "NightThemeUpdateNotification"
+
 class MyNotLoginTableHeaderView: UIView {
     
     @IBOutlet weak var bgImageView: UIImageView!
@@ -68,6 +70,8 @@ class MyNotLoginTableHeaderView: UIView {
         THTheme.switchToNight(sender.isSelected)
         
         saveIsNight(sender.isSelected)
+        
+        NotificationCenter.default.post(name: NSNotification.Name(NightThemeUpdateNotification), object: sender.isSelected)
     }
     
     @objc @IBAction private func moreLoginWaysButtonClicked(_ sender: AnimatableButton) {

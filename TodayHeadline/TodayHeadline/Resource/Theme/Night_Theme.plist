@@ -60,6 +60,19 @@
 		<string>dayicon_profile_night_24x24_</string>
 	</dict>
 	<key>colors</key>
-	<dict/>
+	<dict>
+		<key>tableViewBackgroundColor</key>
+		<string>#1b1b1b</string>
+		<key>subtitleLabelTextColor</key>
+		<string>#707070</string>
+		<key>cellBackgroundColor</key>
+		<string>#252525</string>
+		<key>moreLoginBackgroundColor</key>
+		<string>#252525</string>
+		<key>moreLoginTextColor</key>
+		<string>#707070</string>
+		<key>black</key>
+		<string>#707070</string>
+	</dict>
 </dict>
 </plist>

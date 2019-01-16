@@ -60,6 +60,19 @@
 		<string>nighticon_profile_24x24_</string>
 	</dict>
 	<key>colors</key>
-	<dict/>
+	<dict>
+		<key>tableViewBackgroundColor</key>
+		<string>#f6f6f6</string>
+		<key>subtitleLabelTextColor</key>
+		<string>#aaaaaa</string>
+		<key>cellBackgroundColor</key>
+		<string>#ffffff</string>
+		<key>moreLoginBackgroundColor</key>
+		<string>#00000060</string>
+		<key>moreLoginTextColor</key>
+		<string>#ffffff</string>
+		<key>black</key>
+		<string>#000000</string>
+	</dict>
 </dict>
 </plist>

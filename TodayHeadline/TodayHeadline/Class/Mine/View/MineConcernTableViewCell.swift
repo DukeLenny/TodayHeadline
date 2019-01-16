@@ -24,6 +24,10 @@ class MineConcernTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
         collectionView.registerCell(MyConcernCollectionViewCell.self)
         
         arrowImageView.theme_image = "images.setting_rightarrow"
+        
+        titleLabel.theme_textColor = "colors.black"
+        subtitleLabel.theme_textColor = "colors.subtitleLabelTextColor"
+        contentView.theme_backgroundColor = "colors.cellBackgroundColor"
     }
     
     var model: MineCellModel? {

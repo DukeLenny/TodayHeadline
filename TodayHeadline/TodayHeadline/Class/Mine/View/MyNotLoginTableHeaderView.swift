@@ -22,6 +22,7 @@ class MyNotLoginTableHeaderView: UIView {
     @IBOutlet private weak var qqButton: UIButton!
     @IBOutlet private weak var weixinButton: UIButton!
     @IBOutlet private weak var weiboButton: UIButton!
+    @IBOutlet private weak var bottomView: UIView!
     
     class func instance() -> MyNotLoginTableHeaderView {
         return Bundle.main.loadNibNamed("\(self)", owner: nil, options: nil)?.first as! MyNotLoginTableHeaderView
@@ -40,8 +41,17 @@ class MyNotLoginTableHeaderView: UIView {
         historyButton.theme_setImage("images.history_profile", forState: .normal)
         nightButton.theme_setImage("images.nighticon_profile", forState: .normal)
         
+        collectionButton.theme_setTitleColor("colors.black", forState: .normal)
+        historyButton.theme_setTitleColor("colors.black", forState: .normal)
+        nightButton.theme_setTitleColor("colors.black", forState: .normal)
+        
         nightButton.setTitle("日间", for: .selected)
         nightButton.isSelected = getIsNight()
+        
+        moreLoginWaysButton.theme_backgroundColor = "colors.moreLoginBackgroundColor"
+        moreLoginWaysButton.theme_setTitleColor("colors.moreLoginTextColor", forState: .normal)
+        
+        bottomView.theme_backgroundColor = "colors.cellBackgroundColor"
     }
     
     @objc @IBAction private func collectionButtonClicked(_ sender: UIButton) {

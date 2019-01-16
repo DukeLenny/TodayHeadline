@@ -20,6 +20,10 @@ class MineNormalTableViewCell: UITableViewCell, RegisterReusableViewOrNib {
         // Initialization code
         
         arrowImageView.theme_image = "images.setting_rightarrow"
+        
+        contentView.theme_backgroundColor = "colors.cellBackgroundColor"
+        titleLabel.theme_textColor = "colors.black"
+        subtitleLabel.theme_textColor = "colors.subtitleLabelTextColor"
     }
     
     var model: MineCellModel? {

@@ -150,6 +150,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="bgImageView" destination="L9m-Fz-7gX" id="MWw-fM-Wgf"/>
+                <outlet property="bottomView" destination="6Dp-OX-S1u" id="6ij-RJ-hNF"/>
                 <outlet property="collectionButton" destination="DR8-1T-RIX" id="Hg4-d4-m7Z"/>
                 <outlet property="historyButton" destination="zlD-pb-ZIn" id="5gd-Wt-KAS"/>
                 <outlet property="moreLoginWaysButton" destination="hth-ts-mL7" id="klJ-Q0-mf7"/>

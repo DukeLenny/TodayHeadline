@@ -53,7 +53,8 @@ extension MineViewController {
     }
     
     private func setTableView() {
-        tableView.backgroundColor = GlobalBackgroundColor
+//        tableView.backgroundColor = GlobalBackgroundColor
+        tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
 //        tableView.tableFooterView = UIView()
         tableView.showsVerticalScrollIndicator = false
 //        tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: CGFloat.leastNormalMagnitude))
@@ -111,7 +112,8 @@ extension MineViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: 10.0))
-        view.backgroundColor = GlobalBackgroundColor
+//        view.backgroundColor = GlobalBackgroundColor
+        view.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return view
     }
     

@@ -64,7 +64,7 @@
                     </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="NxC-l7-N4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9UP-JC-285"/>
                 <constraint firstItem="II5-cB-oCB" firstAttribute="trailing" secondItem="Asw-TD-Q7z" secondAttribute="trailing" id="PhK-WM-47O"/>

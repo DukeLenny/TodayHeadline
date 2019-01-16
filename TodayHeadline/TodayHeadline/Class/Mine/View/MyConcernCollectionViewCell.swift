@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import SwiftTheme
 
 class MyConcernCollectionViewCell: UICollectionViewCell, RegisterReusableViewOrNib {
     
@@ -22,6 +23,8 @@ class MyConcernCollectionViewCell: UICollectionViewCell, RegisterReusableViewOrN
         
         tipView.layer.borderWidth = 1.0
         tipView.layer.borderColor = UIColor.white.cgColor
+        
+        nameLabel.theme_textColor = "colors.black"
     }
     
     var concern: MineConcernModel? {

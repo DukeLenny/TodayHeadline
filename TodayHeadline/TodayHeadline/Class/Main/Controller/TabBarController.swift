@@ -20,11 +20,22 @@ class TabBarController: UITabBarController {
     }
     
     @objc private func nightThemeUpdate(notification: NSNotification) {
-        let isNight = notification.object as! Bool
-        if isNight {
-            // FIXME
-        } else {
-            
+//        let isNight = notification.object as! Bool
+        for vc in viewControllers! {
+            var imageName = ""
+            switch vc.tabBarItem.title! {
+            case "首页":
+                imageName = "home"
+            case "西瓜视频":
+                imageName = "video"
+            case "小视频":
+                imageName = "huoshan"
+            case "未登录":
+                imageName = "no_login"
+            default:
+                imageName = ""
+            }
+            setChild(vc, imageName: imageName)
         }
     }
     
@@ -37,7 +48,9 @@ class TabBarController: UITabBarController {
 // MARK: - SetUI
 extension TabBarController {
     private func setUI() {
-        UITabBar.appearance().tintColor = UIColor.rgb(245.0, 90.0, 93.0)
+//        UITabBar.appearance().tintColor = UIColor.rgb(245.0, 90.0, 93.0)
+        UITabBar.appearance().theme_tintColor = "colors.tabBarTintColor"
+        UITabBar.appearance().theme_backgroundColor = "colors.cellBackgroundColor"
         
         setValue(TabBar(), forKey: "tabBar")
     }

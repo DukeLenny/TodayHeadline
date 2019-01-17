@@ -73,6 +73,8 @@
 		<string>#ffffff</string>
 		<key>black</key>
 		<string>#000000</string>
+		<key>tabBarTintColor</key>
+		<string>#f55a5d</string>
 	</dict>
 </dict>
 </plist>

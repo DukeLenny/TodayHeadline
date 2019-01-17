@@ -12,8 +12,10 @@ class TabBar: UITabBar {
 
     private lazy var publishButton: UIButton = {
         let publishButton = UIButton(type: .custom)
-        publishButton.setImage(UIImage(named: "feed_publish_44x44_"), for: .normal)
-        publishButton.setImage(UIImage(named: "feed_publish_press_44x44_"), for: .highlighted)
+//        publishButton.setImage(UIImage(named: "feed_publish_44x44_"), for: .normal)
+//        publishButton.setImage(UIImage(named: "feed_publish_press_44x44_"), for: .highlighted)
+        publishButton.theme_setImage("images.feed_publish", forState: .normal)
+        publishButton.theme_setImage("images.feed_publish_press", forState: .highlighted)
         publishButton.sizeToFit()
         return publishButton
     }()
